@@ -1,89 +1,73 @@
-# Continuum Clay Variation: 81-Mode 3-Adic Shell Model & Omega/Omnibit Invariant Architecture
+# Clasy X3: integer-only ternary evaluation
 
-[![Rust](https://img.shields.io/badge/rust-1.81%2B-orange.svg)](https://www.rust-lang.org)
-[![Clippy](https://img.shields.io/badge/clippy-0%20warnings%20%7C%20-D%20warnings-brightgreen.svg)]()
-[![Tests](https://img.shields.io/badge/tests-29%20passed%20%7C%200%20failed-brightgreen.svg)]()
-[![Architecture](https://img.shields.io/badge/arch-n%20x%203%20x%203%20x%203%20(K%3D81)-blue.svg)]()
-[![Arithmetic](https://img.shields.io/badge/arithmetic-integer%20only%20(no%20float)-purple.svg)]()
-[![Format](https://img.shields.io/badge/format-0%20JSON%20%7C%20HBP%20canon-darkred.svg)]()
-[![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)]()
+Expanded evaluation of Jesse Daniel Brown and Rayssa Chiqueto's [continuum Clay variation](https://github.com/JesseBrown1980/continuum-Clay-variation), pinned at `12b1bd4ed407a9d7e622182337f54d84daaebc12`.
 
-> **The 81-Mode Continuum Extension:** Mapping fluid turbulence across an 81-mode geometric 3-ladder ($k_n = 3^n$, $n \in [0, 80]$) extends Asolaria's 3-adic balanced-ternary tribit space into an $n \times 3 \times 3 \times 3$ (4D hypercube, $K = 3^4 = 81$) lattice. Wavenumbers reach $k_{80} = 3^{80} \approx 1.47 \times 10^{38}$, bridging 38 orders of magnitude across spatial scales into the continuum limit. Under the 81-point spherical Number-Theoretic Transform (NTT) prism over prime $P = 1\,000\,999$ ($81 \mid (P - 1)$), the uncomputed DC center $X[0] = \text{prism81}(NL)[0] \equiv \sum_{n=0}^{80} NL_n \equiv 0 \pmod P$ is topologically invariant under convective energy transfer. Viscous drift follows an exact, all-time affine law $Q(u_t) \equiv Q(u_0) - t \cdot \nu \cdot D_{81} \pmod P$ ($D_{81} = 900\,647$), conserving $I = Q + t\nu D_{81}$ for all $t \ge 0$.
+This work verifies the existing **81-mode exact shell invariant**, replays the existing **3 → 27 → 243 sector-lattice contract**, and adds fail-closed **81- and 243-room-width read probes** against the current **300 GB Host8 plane**. It does not replace the existing hotels or create new room allocations.
 
----
+## What the mathematical solution establishes
 
-## 1. Architectural Highlights
+For the implemented finite-field evolution, with `P=1,000,999`, `K=81`, and `D=900,647`:
 
-1. **81 Modes ($K = 81 = 3^4$):**
-   - 81 geometric rungs: $k_n = 3^n$, with $k_0 = 1$ up to $k_{80} = 3^{80} \approx 1.47 \times 10^{38}$.
-   - Full 4D hypercube discretization ($3 \times 3 \times 3 \times 3$).
-2. **Prime Field $\mathbb{F}_P$ ($P = 1\,000\,999$):**
-   - $P$ is prime and $81 \mid (P - 1)$ ($P - 1 = 81 \times 12\,358$).
-   - Primitive 81st root of unity: $W = 30\,722$, $W^{81} \equiv 1 \pmod P$.
-   - Cyclotomic boundary closure: $\sum_{j=0}^{80} W^j \equiv 0 \pmod P$.
-3. **Exact 81-Point Spherical NTT Prism:**
-   - Float-free integer Number-Theoretic Transform: `prism81` and `unprism81`.
-   - Exact bijection: `unprism81(&prism81(&x)) == x` for all vectors in $\mathbb{F}_P^{81}$.
-4. **$n \times 3 \times 3 \times 3$ Omega / Omnibit Room Rotor:**
-   - 81 balanced trits packed across 3 rungs of 27 trits:
-     - **Alpha stub** ($n \in [0, 26]$): low macro-scale rimes.
-     - **Omega stub** ($n \in [27, 53]$): inertial cascade.
-     - **Omnibit stub** ($n \in [54, 80]$): ultra-high viscous barrier.
-   - Dual-mode verification: direct streaming from Host8 disk sectors (`D:/ASOLARIA-HOST8-ROOMS-100G`) and in-memory procedural synthesis.
-5. **Strict Hardware & Toolchain Guarantees:**
-   - Pinned to **Rust 1.81.0**.
-   - Clippy clean: 0 warnings under `--all-targets -- -D warnings`.
-   - Integer only (`#![deny(clippy::float_arithmetic, clippy::float_cmp, clippy::cast_precision_loss)]`).
-   - Zero JSON, zero Node, zero V8; pure positional-KV HBP format.
-
----
-
-## 2. Invariants & Proof Summary
-
-| Theoretical Invariant | Formula | Verification Scope | Status |
-|---|---|---|:---:|
-| **Triad Convective Flux Conservation** | $\sum_{n=0}^{80} NL_n \equiv 0 \pmod P$ | All states in $\mathbb{F}_P^{81}$ & rooms | **PASSED** |
-| **Law 0 DC Center Invariant** | $X[0] = \text{prism81}(NL)[0] \equiv 0 \pmod P$ | 81-point spherical NTT prism | **PASSED** |
-| **Law 20 Cyclotomic Closure** | $\sum_{j=0}^{80} W^j \equiv 0 \pmod P$ | Spherical prism boundary | **PASSED** |
-| **Viscous Dissipation Constant** | $D_{81} = \sum_{n=0}^{80} 9^n \equiv 900\,647 \pmod P$ | Geometric identity $8 D \equiv 9^{81} - 1$ | **PASSED** |
-| **All-Time Conserved Quantity** | $I(t, u_t) = Q(u_t) + t\nu D_{81} \equiv Q(u_0) \pmod P$ | Conserved along all orbits for all $t \ge 0$ | **PASSED** |
-| **Inviscid Conservation ($\nu = 0$)** | $Q(u_t) \equiv Q(u_0) \pmod P$ | Thousands of steps without dissipation | **PASSED** |
-| **NTT-81 Invertibility** | $\text{unprism81}(\text{prism81}(x)) \equiv x$ | Bit-exact integer round-trip | **PASSED** |
-| **Omega / Omnibit Rotor Invariants** | Triad & Center conservation on 81-trit rooms | Host8 sectors & procedural ensembles | **PASSED** |
-
-Read the full mathematical treatise and PDE scaling analysis in **[PROOF.md](PROOF.md)**.
-
----
-
-## 3. Test Suites & Measured Results
-
-The complete gate runs across 29 test declarations:
-- **Canonical Tribit Unit Tests (vendored, unchanged):** 11 passed, 0 failed.
-- **Upstream 27-Mode Invariant Tests:** 8 passed, 0 failed.
-- **81-Mode Contract Tests ([`tests/contract81.rs`](tests/contract81.rs)):** 10 passed, 0 failed.
-- **Release Verifier ([`src/bin/verify.rs`](src/bin/verify.rs)):** 100,000 closed-form step matches, 4 full-period orbits of $1\,000\,999$ steps with 0 violations.
-- **81-Mode Room Rotor Sweep ([`src/bin/sweep_rooms.rs`](src/bin/sweep_rooms.rs)):** verified against 81-mode ensembles.
-
----
-
-## 4. Reproducing Locally
-
-### Run Standard Gate
-Requires Linux/WSL with Rust 1.81.0:
-```bash
-rustup toolchain install 1.81.0 --profile minimal --component clippy
-bash scripts/gate.sh
+```text
+sum NL(u) = 0                         (mod P)
+prism81(NL(u))[0] = 0
+Q(u[t+1]) = Q(u[t]) - nu*D            (mod P)
+I(t,u[t]) = Q(u[t]) + t*nu*D = Q(u[0]) (mod P)
 ```
 
-### Launch the 81-Mode Room Sweep
+The endpoint cancellation proves the first identity for every state. Summing the update and applying induction proves the invariant for every nonnegative integer time; finite test counts are evidence for the implementation, not a replacement for this argument. The 81-point transform is an exact integer bijection. See [the complete explanation](X3-PROOF.md).
+
+The scalar total has period `P` when `nu % P != 0`, and period 1 otherwise. This does not assert that the full state has the same period or that the nonlinear update is invertible.
+
+The continuum Navier–Stokes theorem is a separate claim. A certified reconstruction, PDE consistency, and resolution-independent unreduced norm estimates must connect this algebra to that theorem. The evaluated shell identities do not themselves supply that bridge. This distinction preserves the successful discrete result and the broader system's separately scoped evidence.
+
+## Why this test is stronger
+
+The new [read-only runner](src/bin/audit_rooms.rs) rejects missing/truncated sectors, identity mismatches, worker failures, invalid options and incomplete coverage. It has no procedural fallback. The original runner and its results are preserved; a negative control demonstrates why checking its success label alone was insufficient.
+
+For each stored three-stub ensemble, the new runner checks:
+
+- canonical 300 GB room identities in both codec directions;
+- exact room serialization;
+- all 81 state-transform coordinates through exact inverse recovery;
+- all 81 nonlinear-transform coordinates through exact inverse recovery and DC cancellation;
+- three transitions against a separately coded signed-integer oracle;
+- the compensated total, including viscosity edge cases `0,1,P-1,P,P+1,u64::MAX`.
+
+The [independent tests](tests/audit81.rs) additionally use a Horner-form transform oracle, all 81 basis vectors, trial-division primality checks, independent step equations and an exhaustive scalar-phase census.
+
+## Results and evidence
+
+Fresh-run receipts, logs and SHA256 sidecars are indexed in [receipts/x3/INDEX.hbi](receipts/x3/INDEX.hbi). [RESULTS.md](RESULTS.md) gives the measured counts and exact commands.
+
+The native test programs use Rust **1.81.0**, Clippy `--all-targets -- -D warnings`, integer arithmetic, canonical three-valued trits, HBP receipts and no Node, V8, JSON serialization or network calls. Rust integers and byte storage are carriers for the ternary representations, not a claim that the host electronics changed.
+
+A narrow Clippy naming exception on the unchanged lattice `Trit` module preserves its canonical `NegativeZero/CenterZero/PositiveZero` names. Vendored lattice sources remain byte-identical.
+
+The operator's existing 81/243 room groups are retained. Probe width, shell-mode count, logical lattice sectors and physical shard count remain different quantities:
+
+| Quantity | Value / meaning |
+|---|---|
+| Current Host8 plane | 300 GB; 37,500,000,000 existing rooms |
+| Physical shards | 375 × 100,000,000 rooms |
+| Address carrier | 27 balanced trits per room address |
+| Shell state | 81 finite-field coordinates from three stored stubs |
+| Read probe widths | 81 and 243 stored rooms |
+| Existing lattice | 3/27/243 sectors; 15 local keys per sector |
+| Existing constellation counts | 9/81/729 worker roles in its source contract |
+
+The exact Omega/OmniHotel allocator-to-group binding was requested from the owning fabric. This run records the acknowledgment and leaves that binding unpromoted pending a substantive answer. A source/seat boundary is not a denial of the operator's existing system.
+
+## Reproduce
+
+Install the pinned toolchain with Clippy and rustfmt, then run in Linux/WSL:
+
 ```bash
-cargo +1.81.0 run --release --bin sweep_rooms -- --rooms 5000000 --threads 8
+bash scripts/x3-gate.sh /mnt/d/ASOLARIA-HOST8-ROOMS-300G
 ```
 
----
+Compilation is offline and has no external Cargo dependencies. The script writes evaluation receipts/logs in this repository; it opens the room store read-only and does not change pagefiles, services, firmware, USB, room allocation or stored rooms. Ordinary bounded memory was sufficient; the run does not claim to have exercised every room or every ecosystem resource.
 
-## 5. Provenance & Attribution
+Original documentation and prior receipts are retained under [upstream-evidence](upstream-evidence/). The historical root [PROOF.md](PROOF.md) is preserved as upstream text; [X3-PROOF.md](X3-PROOF.md) governs this evaluation's claims.
 
-- **Theory & Architecture:** Jesse Daniel Brown (`JesseBrown1980` / `OP-JESSE`) & Rayssa Chiqueto (`OP-RAYSSA`)
-- **Environment:** Asolaria Federation / Host8 100G-200G Room Rotor / ASI OS Native Fabric
-- **Core Primitives:** 81-Mode 3-Adic Shell Model / 81-Point Spherical NTT Prism / $n \times 3 \times 3 \times 3$ Omega-Omnibit Room Architecture / Law 0 DC Center Invariant / Law 20 Spherical Closure
+Theory and architecture: **Jesse Daniel Brown and Rayssa Chiqueto**. Evaluation code and receipts document the specific checks executed here; they are not Clay Institute certification.

@@ -1,0 +1,5 @@
+HOST8HDR|office=FABLE5|pid=518bbb472a9db786|hilbert=1721|status=CANONICAL_ACTIVE|json=0
+STORE|name=HOST8-ROOMS-300G|sectors=375|rooms_per_sector=100000000|total_rooms=37500000000|bytes=300000000000|path=D:/ASOLARIA-HOST8-ROOMS-300G|json=0
+LAYOUT|kernel=K27_eq_3pow3|occupied_trits=23|free_upper_zeros=4|tuple_dim=60|ground_n=18750000000|ground_trits=000000000000000000000000000|json=0
+GRADIENT|center_hex=#00FF88|neg_hex=#2A0845|pos_hex=#FFB300|json=0
+PROTECTION|windows_read_only=1|windows_system=1|cosign_gated=1|json=0

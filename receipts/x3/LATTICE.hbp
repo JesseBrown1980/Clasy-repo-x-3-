@@ -1,0 +1,4 @@
+X3LATTICE|level=0|sectors=3|local_keys=45|next_sectors=27|shell_audit_callbacks=45|model_service_calls=0|status=PASS|json=0
+X3LATTICE|level=1|sectors=27|local_keys=405|next_sectors=243|shell_audit_callbacks=405|model_service_calls=0|status=PASS|json=0
+X3LATTICE|level=2|sectors=243|local_keys=3645|next_sectors=2187|shell_audit_callbacks=3645|model_service_calls=0|status=PASS|json=0
+X3LATTICERESULT|keys=4095|new_shell_transitions=12285|existing_contract_reused=1|allocation_changes=0|float_used=0|node=0|v8=0|json=0

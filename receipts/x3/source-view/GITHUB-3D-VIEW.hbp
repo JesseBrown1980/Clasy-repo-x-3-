@@ -1,0 +1,32 @@
+GITHUB3DHDR|schema=ASOLARIA-GITHUB-3D-VIEW-V4|bytes_source=git_cat_file_HEAD_tree_not_working_tree|corrects=V2 hashed autocrlf-converted CRLF working-tree bytes|supersedes_scope_of=2147b583a4db0f3f|fold=common/fold.rs:sketch_lanes=LOSSY_LINEAR+identity_lanes=SHA256|roundtrip_scope=KERNEL_BIJECTION_NOT_DATA|kernel=rust-1.81-clippy-int-only|carrier=AC_balanced_ternary_setun|P=1000081|G=7|K=27|W=951846|float_used=0|free_fourth_zero=HTTP-0_OMEGA_PORTAL_NAMED|traversal=HBI->HBP->SHA->SH->HASH|repos=1|held_listed=1|reuse=asolaria-os/kernel/core/tribit|E=0|json=0
+GITHUB3DREPO|repo=continuum|commit=12b1bd4ed407a9d7e622182337f54d84daaebc12|admitted=24|held=1|corpus_bytes=85556|sha=7d1c01bd1119952cd98df6639a2f17491df014cd73062f4a4577e913ff02316e|sh=7d1c01bd1119952c|roundtrip=EXACT|dc_free_zero=615274|cube=3x3x3|spectrum_sha=be215af6a5c29ab3dc1be95a5716763692e8929cc1136e0e839077dc48ae9b18|trit80=-.-.-.-.+-+-.-+--+.+.-.--+.+..++.--++...+-.-----+....-+.++++.+.--..-.-++.++.+++-|trit80_kind=LOSSY_HASH_PREFIX_RENDER|sketch_kind=LOSSY_LINEAR_PERIOD_100008|id_spectrum_sha=439d7ca9f59857025d984af4f0c6558db516d7fc8efabd58d7173a6c155133ce|id_roundtrip=EXACT|framed_sha=a24a9bc174c24d9db02212dbd395fd5ee0e98b3579240dd4faa68b601eb04edb|json=0
+HELDFILE|repo=continuum|path=Cargo.lock|reason=HELD_PATH|bytes=299|json=0
+CUBECELL|repo=continuum|j=0|a=-1|b=-1|c=-1|v=615274|free=1|json=0
+CUBECELL|repo=continuum|j=1|a=0|b=-1|c=-1|v=884740|free=0|json=0
+CUBECELL|repo=continuum|j=2|a=1|b=-1|c=-1|v=613413|free=0|json=0
+CUBECELL|repo=continuum|j=3|a=-1|b=0|c=-1|v=839062|free=0|json=0
+CUBECELL|repo=continuum|j=4|a=0|b=0|c=-1|v=632590|free=0|json=0
+CUBECELL|repo=continuum|j=5|a=1|b=0|c=-1|v=437852|free=0|json=0
+CUBECELL|repo=continuum|j=6|a=-1|b=1|c=-1|v=819515|free=0|json=0
+CUBECELL|repo=continuum|j=7|a=0|b=1|c=-1|v=628229|free=0|json=0
+CUBECELL|repo=continuum|j=8|a=1|b=1|c=-1|v=770057|free=0|json=0
+CUBECELL|repo=continuum|j=9|a=-1|b=-1|c=0|v=456955|free=0|json=0
+CUBECELL|repo=continuum|j=10|a=0|b=-1|c=0|v=417436|free=0|json=0
+CUBECELL|repo=continuum|j=11|a=1|b=-1|c=0|v=586980|free=0|json=0
+CUBECELL|repo=continuum|j=12|a=-1|b=0|c=0|v=34204|free=0|json=0
+CUBECELL|repo=continuum|j=13|a=0|b=0|c=0|v=715746|free=0|json=0
+CUBECELL|repo=continuum|j=14|a=1|b=0|c=0|v=497459|free=0|json=0
+CUBECELL|repo=continuum|j=15|a=-1|b=1|c=0|v=310650|free=0|json=0
+CUBECELL|repo=continuum|j=16|a=0|b=1|c=0|v=453503|free=0|json=0
+CUBECELL|repo=continuum|j=17|a=1|b=1|c=0|v=794024|free=0|json=0
+CUBECELL|repo=continuum|j=18|a=-1|b=-1|c=1|v=617750|free=0|json=0
+CUBECELL|repo=continuum|j=19|a=0|b=-1|c=1|v=817977|free=0|json=0
+CUBECELL|repo=continuum|j=20|a=1|b=-1|c=1|v=437138|free=0|json=0
+CUBECELL|repo=continuum|j=21|a=-1|b=0|c=1|v=351323|free=0|json=0
+CUBECELL|repo=continuum|j=22|a=0|b=0|c=1|v=315304|free=0|json=0
+CUBECELL|repo=continuum|j=23|a=1|b=0|c=1|v=11785|free=0|json=0
+CUBECELL|repo=continuum|j=24|a=-1|b=1|c=1|v=932987|free=0|json=0
+CUBECELL|repo=continuum|j=25|a=0|b=1|c=1|v=970251|free=0|json=0
+CUBECELL|repo=continuum|j=26|a=1|b=1|c=1|v=126462|free=0|json=0
+SKETCHFALSIFIER|claim=sketch_lanes is not an identity; identity_lanes separates what it merges|collision55_sketch_equal=1|collision55_identity_differ=1|collision55_deltas=pos0+183,pos27+241,pos54-252|period=100008|period_is_exact_order_of_131=1|period_swap_sketch_equal=1|period_swap_identity_differ=1|prior_collision_length=1000082_found_by_opus55_10x_longer_than_needed|status=PASS|json=0
+GITHUB3DHASH|method=sha256_over_sorted_repo=sha_lines_LF|repos=1|hash=7186562460ae916c6c752f2148bc8ed4d8036dbae3b5b0f98afaf563429d3cdd|method2=sha256_over_sorted_repo=commit=framed_sha_lines_LF|hash2=655bfd9c06685541abe02ede45920970518be046299163cadc4a400dd8165b08|method3=sha256_over_HELDFILE_rows_in_emit_order_LF|hash3=06ea9cb74761012fd77ec01e7b540774f1f4ae2ace81cd6154006e11cab13b65|float_used=0|all_roundtrip_exact=1|status=PASS|json=0

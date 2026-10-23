@@ -1,0 +1,129 @@
+   Compiling continuum-clay-variation v0.1.0 (/mnt/c/Users/acer/clasy-x3-evaluation-20261023/publication)
+    Finished `release` profile [optimized] target(s) in 3.33s
+     Running unittests src/lib.rs (target/release/deps/continuum_clay_variation-b4d0d28d3485f98f)
+
+running 17 tests
+test canonical_tribit::tests::all_three_zeros_have_magnitude_zero ... ok
+test canonical_tribit::tests::dc_cannot_reach_the_crossings ... ok
+test canonical_tribit::tests::free_registers_are_zero_and_one ... ok
+test canonical_tribit::tests::eighty_is_the_exact_ceiling ... ok
+test canonical_tribit::tests::pump_shell_grows_as_log3 ... ok
+test canonical_tribit::tests::the_prism_closes_on_zero ... ok
+test canonical_tribit::tests::transfers_back_and_forth_exactly ... ok
+test canonical_tribit::tests::trianti_is_order_three_and_distinct_from_its_inverse ... ok
+test canonical_tribit::tests::trit_word_round_trips ... ok
+test canonical_tribit::tests::w_really_is_a_primitive_27th_root ... ok
+test canonical_tribit::tests::zero_states_equals_what_zero_at_can_reach ... ok
+test host8_audit::tests::corrupted_identity_and_out_of_plane_rejected ... ok
+test host8_audit::tests::empty_audit_not_passed ... ok
+test host8_audit::tests::mixer_is_exact_both_directions ... ok
+test host8_audit::tests::noncanonical_state_rejected ... ok
+test host8_audit::tests::published_300g_room_identities_match ... ok
+test host8_audit::tests::independent_step_agrees_at_viscosity_edges ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/bin/audit_rooms.rs (target/release/deps/audit_rooms-862b8c48e2e50b80)
+
+running 4 tests
+test tests::missing_store_rejected ... ok
+test tests::only_existing_widths_admitted ... ok
+test tests::unknown_or_truncated_options_rejected ... ok
+test tests::zero_threads_rejected ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/sector_contract.rs (target/release/deps/sector_contract-feae5042144bd7a5)
+
+running 10 tests
+test oscillator::tests::every_participating_role_receives_the_identical_key ... ok
+test oscillator::tests::inverse_is_a_local_key_involution ... ok
+test oscillator::tests::local_reverse_and_hold_are_active_at_every_edge ... ok
+test oscillator::tests::lockstep_barrier_requires_every_local_play_before_times_nine ... ok
+test trit::tests::all_bytes_survive_b_to_t_to_27_to_t_to_b ... ok
+test trit::tests::every_glyph_is_one_unique_trit_triple ... ok
+test trit::tests::balanced_division_is_exact_across_negative_and_positive_values ... ok
+test trit::tests::negative_center_and_positive_zero_tags_never_collapse ... ok
+test oscillator::tests::each_level_sector_and_edge_has_all_three_local_directions ... ok
+test trit::tests::width_gate_rejects_unrepresentable_values_and_invalid_glyphs ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/bin/sweep_rooms.rs (target/release/deps/sweep_rooms-06404fee5219bb2c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/verify.rs (target/release/deps/verify-ee2c68ea2e793189)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/audit81.rs (target/release/deps/audit81-b4cc7a039f31083b)
+
+running 17 tests
+test audit_endpoint_floor_split_on_odd_and_extreme_residues ... ok
+test audit_existing_243_room_routing_is_not_a_243_point_ntt ... ok
+test audit_linear_balance_is_not_quadratic_energy_cancellation ... ok
+test audit_iterated_weights_and_drift_without_production_pow ... ok
+test audit_positive_viscosity_forces_zero_unless_zero_mod_p ... ok
+test audit_full_spectrum_not_only_dc ... ok
+test audit_prime_field_and_generator_by_trial_division ... ok
+test audit_inverse_on_independent_spectra ... ok
+test audit_scalar_period_does_not_assert_full_state_period ... ok
+test audit_scalar_phase_period_is_one_when_nu_is_zero_mod_p ... ok
+test audit_signed_nonlinear_oracle_and_telescoping_edge_flux ... ok
+test audit_nonzero_scalar_drift_has_exact_period_p ... ok
+test audit_transform_constants_and_exact_order ... ok
+test audit_transform_inverse_does_not_imply_dynamical_injectivity ... ok
+test audit_step_coordinates_for_viscosity_edges ... ok
+test audit_all_81_basis_vectors_against_reference_and_inverse ... ok
+test audit_multistep_oracle_and_all_time_phase_formula ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/contract81.rs (target/release/deps/contract81-e8b7c0bf21afc353)
+
+running 10 tests
+test test_cyclotomic_boundary_closure_and_root_order ... ok
+test test_drift_constant_and_geometric_identity ... ok
+test test_scope_linear_conservation_does_not_imply_quadratic_energy_cancellation ... ok
+test test_scope_positive_viscosity_moves_zero_state ... ok
+test test_omega_omnibit_room_serialization_and_invariants ... ok
+test test_scope_modular_enstrophy_vs_unreduced_real_energy ... ok
+test test_81_point_spherical_ntt_roundtrip_is_exact ... ok
+test test_step_closed_form_and_affine_drift ... ok
+test test_inviscid_flow_conserves_q_for_thousands_of_steps ... ok
+test test_triad_non_linear_flux_sums_identically_to_zero_across_states ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.53s
+
+     Running tests/fail_closed.rs (target/release/deps/fail_closed-12ba680bc2b5c8e6)
+
+running 7 tests
+test room_encoding_has_fixed_little_endian_layout ... ok
+test disk_word_little_endian_fixture ... ok
+test out_of_sector_and_empty_reads_rejected ... ok
+test short_read_is_error_not_partial_success ... ok
+test truncated_sector_exits_nonzero_without_success_receipt ... ok
+test missing_store_exits_nonzero_without_fallback ... ok
+test invalid_cli_exits_nonzero ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/upstream27.rs (target/release/deps/upstream27-2f97a1d5e114d24f)
+
+running 8 tests
+test arbitrary_trit_perturbations_preserve_dc_center_invariant ... ok
+test spherical_ntt_prism_round_trip_is_exact ... ok
+test triad_non_linear_convective_flux_sums_identically_to_zero ... ok
+test uncomputed_center_invariant_conserved_under_convective_cascade ... ok
+test viscous_dissipation_dominates_at_high_3adic_rungs ... ok
+test enstrophy_singularity_is_topologically_prohibited ... ok
+test twenty_seven_mode_shell_model_energy_strictly_bounded_over_thousands_of_steps ... ok
+test host8_rooms_massive_sweep_satisfies_all_invariants ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

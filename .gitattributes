@@ -2,3 +2,4 @@
 *.hbp text eol=lf
 *.hbi text eol=lf
 *.sha256 text eol=lf
+*.log text eol=lf -whitespace

@@ -1,0 +1,11 @@
+X3SOURCEHDR|schema=CLASY-X3-SOURCES-V1|date=2026-10-23|rust=1.81.0|arithmetic=integer|json=0
+SOURCE|repo=JesseBrown1980/continuum-Clay-variation|commit=12b1bd4ed407a9d7e622182337f54d84daaebc12|path=src/lib.rs|original_sha256=e3b762d7f4c5a2cd21fc6edd8b245781871896e9edc754c5d034b3dfb08bf65d|shell_equations_changed=0|new_audit_module_added=1|formatting_normalized=1|json=0
+SOURCE|repo=JesseBrown1980/continuum-Clay-variation|commit=12b1bd4ed407a9d7e622182337f54d84daaebc12|path=src/bin/sweep_rooms.rs|original_sha256=3590d0eda5665f218a43c864f019830cfd5eb3413aca35e4ec46705a54e4ae25|behavior_preserved=1|scope=historical_negative_control|json=0
+SOURCE|name=canonical_Asolaria_tribit|path=vendor/canonical/tribit/mod.rs|sha256=50e4cb85f3b8cf91f9e6b162f990eb51e5f984661259563a21188f3a1d560da0|unchanged=1|json=0
+SOURCE|name=canonical_local_transition_lattice|original_path=scratch/rime-even-odd-unwind-20260724/rust-switch/src/oscillator.rs|vendored=vendor/lattice/oscillator.rs|sha256=373c009600a99b515e94642c49ad8387b86f936a26d2049e1862bbd8aa699bce|unchanged=1|json=0
+SOURCE|name=canonical_local_balanced_trit|original_path=scratch/rime-even-odd-unwind-20260724/rust-switch/src/trit.rs|vendored=vendor/lattice/trit.rs|sha256=c989c5ad8e1341c2bf660af071a3bbf1a714e52004294636fc126b9d29d3a33b|unchanged=1|json=0
+SOURCE|name=host8_codec|original_path=host8-rooms/src/main.rs|original_sha256=798bc96ce1bf76221800fe0808680ef99cdcd613ce1f4e9885d7762e70bde19c|adapter=src/host8_audit.rs|adaptation=readonly_codec_and_explicit_300G_constants|json=0
+SOURCE|name=HOST8_300G_office_packet|original_sha256=17513d71c312e49b054bab4682c397f2c4888ee44bd155205be7f4fb84cce5c8|published_copy=receipts/x3/HOST8-300G.hbp|publication_newlines=LF|json=0
+CANON|owner=OP_JESSE|plane=HOST8_300G|bytes=300000000000|rooms=37500000000|physical_sectors=375|rooms_per_sector=100000000|seed16=518bbb472a9db786|protection_preserved=1|json=0
+OWNERQUERY|id=council-q-1792771698949-d7xdlx|route=PROF_BROWN_HILBERT_PROF_KERNEL_PROF_HELM_HELM|response=HBP_BUS_ACK|substantive_allocator_binding_obtained=0|authority_promotion=0|json=0
+BOUNDARY|operator_existing_groups=81_243|physical_probe_widths=81_243|group_aligned_allocator_binding=NOT_VERIFIED_BY_THIS_RUN|absence_claim=0|json=0
