@@ -1,0 +1,2 @@
+    Finished `release` profile [optimized] target(s) in 0.22s
+     Running `target/release/sweep_rooms --rooms 100000 --threads 8`

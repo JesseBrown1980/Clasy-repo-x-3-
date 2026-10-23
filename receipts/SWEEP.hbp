@@ -1,0 +1,4 @@
+HEADER|suite=continuum_clay_variation|target=host8_81_modes|runtime=rust_1.81|arithmetic=integer_only|ternary=balanced_trit_k81|arch=nx3x3x3|json=0
+CONFIG|target_ensembles=100000|threads=8|do_step=true|nu=1|json=0
+MODE|source=canonical_in_memory_generator|json=0
+RECEIPT81|ensembles=100000|modes_per_ensemble=81|trits_per_ensemble=81|arch=nx3x3x3|elapsed_ms=6700|rate_eps=14925|violations=0|status=VERIFIED_81_INVARIANTS_PASSED|json=0

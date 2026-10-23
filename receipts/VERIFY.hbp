@@ -1,0 +1,11 @@
+VERIFY81HDR|crate=continuum-clay-variation|K=81|P=1000999|W=30722|arithmetic=integer_only|float_used=0|json=0
+DRIFT81|D=900647|recomputed=900647|geom_8D_eq_9pow81_minus_1=1|pass=1|json=0
+CYCLOTOMIC81|sum_W_pow_j_mod_P=0|W_pow_81_mod_P=1|pass=1|json=0
+NTT81PRISM|test_vectors=10000|exact_integer_roundtrip=1|pass=1|json=0
+STEPFORM81|tested=100000|mismatches=0|pass=1|json=0
+ORBIT81|name=initial_energy_sample|nu=1|steps=1000999|q0=748998|q_end=748998|distinct_q=1000999|first_violation=0|pass=1|json=0
+ORBIT81|name=omega_omnibit_room_orbit|nu=2|steps=1000999|q0=494879|q_end=494879|distinct_q=1000999|first_violation=0|pass=1|json=0
+ORBIT81|name=zero_state_control|nu=1|steps=1000999|q0=0|q_end=0|distinct_q=1000999|first_violation=0|pass=1|json=0
+ORBIT81|name=inviscid_control|nu=0|steps=1000999|q0=875000|q_end=875000|distinct_q=1|first_violation=0|pass=1|json=0
+SCOPE81|theorem=exact_all_time_affine_drift_of_81_shell_total|conserved=Q+t*nu*D81|bkm_continuum_limit=requires_unreduced_real_vorticity_norm_control|json=0
+RESULT81|pass=1|json=0
