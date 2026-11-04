@@ -9,6 +9,20 @@ This repository verifies the **81-mode exact shell invariant** and replays the
 243-room-width read probes** against the **300 GB Host8 plane**, using the
 existing hotels and room allocations.
 
+## Connected finite-system research: Clay and Taylor–Green
+
+[**Continuum Clay Variation — original 81-mode model, now updated with this evaluation**](https://github.com/JesseBrown1980/continuum-Clay-variation) · [**Taylor–Green D3Q27 lattice-gas simulator**](https://github.com/JesseBrown1980/Taylor_green_regularity-resolved-and-solved) · [**Mathematical comparison, controls, and proposed bridge**](https://github.com/JesseBrown1980/continuum-Clay-variation/blob/main/docs/BRIDGE-TAYLOR-GREEN.md)
+
+![Illustrative blue vortex from the linked Clay repository](https://raw.githubusercontent.com/JesseBrown1980/continuum-Clay-variation/main/assets/finite-shell-vortex.svg)
+
+*Shared original scientific illustration from Clay; not a measured velocity plot.*
+
+**Current relationship:** Clasy is the independent exact-arithmetic evaluator of Clay's same 81-mode finite-field update. Taylor–Green is a **different** finite-state system: 27 velocity occupancy channels per grid cell, collision gates and spatial streaming. Its exact mass/momentum/energy accounting must not be identified with Clay's compensated modular sum `Q+t·nu·D`. In particular, Clay's additive `-nu·9^n` term is not Taylor–Green's effective hydrodynamic viscosity.
+
+The [Taylor–Green noise control](https://github.com/JesseBrown1980/Taylor_green_regularity-resolved-and-solved/tree/main/results/2026-10-30-noise-test) attributes the large local enstrophy rise to a lattice noise floor when compared with shuffled controls. It does **not** independently establish that the same growth is caused by a coherent Taylor–Green vortex. Its [collapsing-core test](https://github.com/JesseBrown1980/Taylor_green_regularity-resolved-and-solved/tree/main/results/2026-10-30-cutoff) preserves failed and passing pre-registered checks.
+
+**Bridge status: OPEN.** No shared state-to-state map, faithful continuum projection, uniform physical energy estimate, or cross-repo equivalence has been verified. The comparison document provides a prediction-first path for testing those claims without revising either model's already-certified results.
+
 ## The theorem
 
 For the finite-field evolution with P = 1,000,999, K = 81 modes and
